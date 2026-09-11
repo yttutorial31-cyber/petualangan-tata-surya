@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Fredoka', 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fredoka', cursive, sans-serif;
+}
+
+/* Custom keyframes & background effects */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(253, 224, 71, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(253, 224, 71, 0.8);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Star twinkle effect */
+.twinkle {
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.2); }
+}
+

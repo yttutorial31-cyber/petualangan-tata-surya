@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Tata Surya",
+  "description": "Game edukasi petualangan antariksa interaktif materi Tata Surya untuk siswa SD kelas 6 dengan sistem skor, 3 nyawa hati, timer, efek suara, dan bintang penilaian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
